@@ -1,0 +1,25 @@
+extend components/template.pug
+
+
+block contentMain
+    +Menu('contact')(class="")
+    +Header(mainTitles[2], mainButtonsText[2], mainButtonsLinks[2])(class="header-contact")
+    main#contact
+        section.tabs
+            .tabs__head 
+                .tabs__tab.tabs__tab--selected: h3 Contacto
+                .tabs__tab: h3 Redes sociales
+            .tabs__body
+                .tabs__container.tabs__container--selected
+                    .tabs__row
+                        h3.font-size-2 Teléfono:
+                        p 55555555
+                    .tabs__row
+                        h3.font-size-2 Email:
+                        p correo@gmail.com
+                .tabs__container
+                    .tabs__social 
+                        i.fa-brands.fa-tiktok
+                        i.fa-brands.fa-facebook
+                        i.fa-brands.fa-instagram
+        script(src="js/app_tabs.js") 

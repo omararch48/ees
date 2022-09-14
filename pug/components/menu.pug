@@ -1,0 +1,66 @@
+mixin Menu(page)
+    nav(class!=attributes.class).main-menu 
+        h2.main-menu__title Taller Mecánico
+        ul.main-menu__list 
+            if page == 'index'        
+                li.main-menu__element 
+                    a(href="#index").main-menu__link Inicio
+                li.main-menu__element 
+                    a(href="services.html").main-menu__link Servicios
+                li.main-menu__element 
+                    a(href="contact.html").main-menu__link Contacto
+            else if page == 'services'
+                li.main-menu__element 
+                    a(href="index.html").main-menu__link Inicio
+                li.main-menu__element 
+                    a(href="#services").main-menu__link Servicios
+                li.main-menu__element 
+                    a(href="contact.html").main-menu__link Contacto
+            else if page == 'contact'
+                li.main-menu__element 
+                    a(href="index.html").main-menu__link Inicio
+                li.main-menu__element 
+                    a(href="services.html").main-menu__link Servicios
+                li.main-menu__element 
+                    a(href="#contact").main-menu__link Contacto
+            else 
+                li.main-menu__element 
+                    a(href="index.html").main-menu__link Inicio
+                li.main-menu__element 
+                    a(href="services.html").main-menu__link Servicios
+                li.main-menu__element 
+                    a(href="contact.html").main-menu__link Contacto
+        .main-menu__mobile 
+            i.color-mainWhite.color-mainGray--hover.cursor-pointer.fa-solid.fa-bars
+    div(class!=attributes.class).menu-mobile 
+        .menu-mobile__container 
+            i.menu-mobile__close.color-mainWhite.color-mainGray--hover.cursor-pointer.fa-solid.fa-xmark
+            ul.menu-mobile__list 
+                if page == 'index'        
+                    li.menu-mobile__element 
+                        a(href="#index").menu-mobile__link Inicio
+                    li.menu-mobile__element 
+                        a(href="services.html").menu-mobile__link Servicios
+                    li.menu-mobile__element 
+                        a(href="contact.html").menu-mobile__link Contacto
+                else if page == 'services'
+                    li.menu-mobile__element 
+                        a(href="index.html").main-menu__link Inicio
+                    li.menu-mobile__element 
+                        a(href="#services").main-menu__link Servicios
+                    li.menu-mobile__element 
+                        a(href="contact.html").menu-mobile__link Contacto
+                else if page == 'contact'
+                    li.menu-mobile__element 
+                        a(href="index.html").main-menu__link Inicio
+                    li.menu-mobile__element 
+                        a(href="services.html").main-menu__link Servicios
+                    li.menu-mobile__element 
+                        a(href="#contact").main-menu__link Contacto
+                else 
+                    li.menu-mobile__element 
+                        a(href="index.html").main-menu__link Inicio
+                    li.menu-mobile__element 
+                        a(href="services.html").main-menu__link Servicios
+                    li.menu-mobile__element 
+                        a(href="contact.html").main-menu__link Contacto

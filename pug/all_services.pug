@@ -1,0 +1,53 @@
+extend components/template.pug
+
+
+block contentMain
+    +Menu('singlePage')(class="single-page")
+    main#singlePage
+        section.all_services
+            p.all_services__description.container Los precios marcados en la lista son aproximados, estos pueden variar sin previo aviso estando en función de costos extras, como por ejemplo compra de materiales adicionales, problemas adicionales en el carro, etc. Para un presupuesto detallado contáctame 
+                a(href="#").clear-link.color-mainBlack.color-mainGreen--hover con un click aquí.
+            div.all_services__titles
+                span.all_services__title_1 Servivio
+                span.all_services__title_2 Costo aprox. (mxn)
+            ul(data-aos="fade-left").all_services__list.clear-list
+                li.all_services__service
+                    span.all_services__row.bg-second-blue.clear-link
+                        span.all_services__name Afinación 
+                        span.all_services__price 500
+                    .all_services__content.bg-second-orange
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus saepe inventore itaque aliquid, molestias.
+                li.all_services__service
+                    span.all_services__row.bg-second-gray.clear-link
+                        span.all_services__name Cambio de aceite
+                        span.all_services__price 500
+                    .all_services__content.bg-second-orange
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda obcaecati fuga ad blanditiis commodi est, culpa nostrum unde ab sint fugiat nihil sapiente id. Aspernatur molestias iste dignissimos officia inventore?
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda obcaecati fuga ad blanditiis commodi est, culpa nostrum unde ab sint fugiat nihil sapiente id. Aspernatur molestias iste dignissimos officia inventore?
+                li.all_services__service
+                    span.all_services__row.bg-second-blue.clear-link
+                        span.all_services__name Frenos
+                        span.all_services__price 500
+                    .all_services__content.bg-second-orange
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus saepe inventore itaque aliquid, molestias.
+                li.all_services__service
+                    span.all_services__row.bg-second-gray.clear-link
+                        span.all_services__name Suspensión 
+                        span.all_services__price 500
+                    .all_services__content.bg-second-orange
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda obcaecati fuga ad blanditiis commodi est, culpa nostrum unde ab sint fugiat nihil sapiente id. Aspernatur molestias iste dignissimos officia inventore?
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda obcaecati fuga ad blanditiis commodi est, culpa nostrum unde ab sint fugiat nihil sapiente id. Aspernatur molestias iste dignissimos officia inventore?
+                li.all_services__service
+                    span.all_services__row.bg-second-blue.clear-link
+                        span.all_services__name Servicio eléctrico
+                        span.all_services__price 500
+                    .all_services__content.bg-second-orange
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus saepe inventore itaque aliquid, molestias.
+                li.all_services__service
+                    span.all_services__row.bg-second-gray.clear-link
+                        span.all_services__name Escaneo
+                        span.all_services__price 500
+                    .all_services__content.bg-second-orange
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda obcaecati fuga ad blanditiis commodi est, culpa nostrum unde ab sint fugiat nihil sapiente id. Aspernatur molestias iste dignissimos officia inventore?
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda obcaecati fuga ad blanditiis commodi est, culpa nostrum unde ab sint fugiat nihil sapiente id. Aspernatur molestias iste dignissimos officia inventore?
+        script(src="js/app_accordion.js") 

@@ -1,0 +1,4 @@
+mixin Header(headerText, headerTextButton, link)
+    header(class!=attributes.class).header 
+        h3.header__message #{headerText}
+        a(href=link): button.header__button.button #{headerTextButton}

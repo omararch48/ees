@@ -1,0 +1,61 @@
+extend components/template.pug
+
+
+block contentMain
+    +Menu('index')(class="")
+    +Header(mainTitles[0], mainButtonsText[0], mainButtonsLinks[0])(class="header-index")
+    main#index 
+        section.container.service-descriptions 
+            div(data-aos="zoom-in").service-description
+                h3.text-center Rápido
+                .service-description__image 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gauge" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1F1F1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="12" r="1" />
+                        <line x1="13.41" y1="10.59" x2="16" y2="8" />
+                        <path d="M7 12a5 5 0 0 1 5 -5" />
+                    </svg>
+                .service-description__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia praesentium distinctio consectetur molestiae.
+            div(data-aos="zoom-out").service-description
+                h3.text-center Confiable
+                .service-description__image 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-check" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1F1F1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 12l2 2l4 -4" />
+                        <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                    </svg>
+                .service-description__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia praesentium distinctio consectetur molestiae.
+            div(data-aos="zoom-in").service-description
+                h3.text-center Personalizado
+                .service-description__image 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-friends" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F1F1F1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="7" cy="5" r="2" />
+                        <path d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" />
+                        <circle cx="17" cy="5" r="2" />
+                        <path d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4" />
+                    </svg>
+                .service-description__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia praesentium distinctio consectetur molestiae.
+        section.container 
+            .text-image.text-image-reverse
+                div(data-aos="fade-up").text-image__image
+                    figure 
+                        img(src="img/jpg/auto1.jpg", alt="Car example")                    
+                div(data-aos="fade-down").text-image__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit! Eligendi nihil dolorum tempore beatae exercitationem possimus?
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit! Eligendi nihil dolorum tempore beatae exercitationem possimus?
+        +Slider(indexSliderOne) 
+        section.container 
+            .text-image.text-image-normal
+                div(data-aos="fade-up").text-image__image
+                    figure 
+                        img(src="img/jpg/services.jpg", alt="Car example")
+                div(data-aos="fade-down").text-image__text
+                    p Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit! Eligendi nihil dolorum tempore beatae exercitationem possimus?
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit!
+        +Slider(indexSliderTwo)
+        script(src="js/app_slider.js") 

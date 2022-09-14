@@ -1,0 +1,23 @@
+extend components/template.pug
+
+
+block contentMain
+    +Menu('services')(class="")
+    +Header(mainTitles[1], mainButtonsText[1], mainButtonsLinks[1])(class="header-services")
+    main#services
+        section.container.galery-services
+            div(style="background: url('img/jpg/s1.jpg') no-repeat center center/cover;").galery-service.galery-service--50
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Afinación
+            div(style="background: url('img/jpg/s2.jpg') no-repeat center center/cover;").galery-service.galery-service--50
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Cambio de Aceite
+            div(style="background: url('img/jpg/s3.jpg') no-repeat center center/cover;").galery-service.galery-service--30
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Frenos
+            div(style="background: url('img/jpg/s4.jpg') no-repeat center center/cover;").galery-service.galery-service--30
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Suspensión
+            div(style="background: url('img/jpg/s5.jpg') no-repeat center center/cover;").galery-service.galery-service--30
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Servicio Eléctrico
+            div(style="background: url('img/jpg/s6.jpg') no-repeat center center/cover;").galery-service.galery-service--50
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Escaneo
+            div(style="background: url('img/jpg/s7.jpg') no-repeat center center/cover;").galery-service.galery-service--50
+                a(href="all_services.html").clear-link.color-mainWhite.color-mainGray--hover Ver todos
+    script(src="js/app_galery_services.js")
